@@ -2,7 +2,8 @@
   "python.linting.flake8Enabled": false,
   "python.linting.enabled": true,
   "python.linting.pylintEnabled": true,
-  "editor.tabSize": 4
+  "editor.tabSize": 4,
+  "python.analysis.useImportHeuristic": true
   // "python.analysis.diagnosticSeverityOverrides": {
   //   "reportMissingImports": "none"
   // }
