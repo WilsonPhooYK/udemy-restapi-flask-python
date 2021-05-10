@@ -1,13 +1,14 @@
 {
-  "python.linting.flake8Enabled": false,
-  "python.linting.enabled": true,
-  "python.linting.pylintEnabled": true,
-  "editor.tabSize": 4,
-  "python.analysis.useImportHeuristic": true
-  // "python.analysis.diagnosticSeverityOverrides": {
-  //   "reportMissingImports": "none"
-  // }
-  //  "python.analysis.extraPaths": [
-  //    "${workspaceFolder}\\2_python_refresher\\_41_imports_in_python"
-  //  ]
+    "python.linting.flake8Enabled": false,
+    "python.linting.enabled": true,
+    "python.linting.pylintEnabled": true,
+    "editor.tabSize": 4,
+    "python.analysis.useImportHeuristic": true,
+    "python.analysis.diagnosticSeverityOverrides": {
+        "reportUnknownMemberType": "warning",
+    },
+    "python.formatting.provider": "black",
+    "python.analysis.extraPaths": [
+        "${workspaceFolder}\\4_flask_restful_efficient_development\\venv\\Lib\\site-packages"
+    ]
 }
