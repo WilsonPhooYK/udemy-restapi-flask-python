@@ -10,3 +10,4 @@
 9. Install Flask-RESTful: `py -m pip install Flask-RESTful`
 10. Set Pylance extraPaths for venv's site-packages
 11. Installl Flask-JWT: `py -m pip install Flask-JWT`
+12. Installl Flask-SQLAlchemy: `py -m pip install Flask-SQLAlchemy`
