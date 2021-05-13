@@ -1,0 +1,9 @@
+black
+Flask==1.1.2
+Flask-RESTful
+Flask-JWT
+Flask-SQLAlchemy
+flask-sqlalchemy-stubs
+pylint
+pylint-flask
+pylint-flask-sqlalchemy
