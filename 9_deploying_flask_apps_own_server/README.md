@@ -10,7 +10,7 @@
 8. More dependencies: `sudo apt-get install postgresql postgresql-contrib`
 9. Login as postgres user: `sudo -i -u postgres`
 10. Create new user: `sudo -i -u root`, `adduser wilson`
-11. Follow this to add ssh credentials to new user: `https://aws.amazon.com/premiumsupport/knowledge-center/new-user-accounts-linux-instance/`. Go to PuTTY Key Generator, load the .pem file. Go to `cd .ssh`. `nano authorized_keys`. Copy `ssh-rsa .....3INCZ` and add ` wilson` behind. Ctrl-O + Ctrl-X to save
+11. Follow this to add ssh credentials to new user: `https://aws.amazon.com/premiumsupport/knowledge-center/new-user-accounts-linux-instance/`. Go to PuTTY Key Generator, load the .pem file. `vi .ssh/authorized_keys`. Copy `ssh-rsa .....3INCZ` and add ` wilson` behind. Ctrl-O + Ctrl-X to save
 11. Set privileges: `visudo`. Under `root ALL=(ALL:ALL) ALL` add `wilson ALL=(ALL:ALL) ALL`. Ctrl-O + Ctrl-X to save
 12. Set authentication: `vi /etc/ssh/sshd_config`, set `PermitRootLogin no`. End of file add `AllowUsers wilson`. `:wq` to save and quit
 13. Refresh and use the new configuration: `service sshd reload`

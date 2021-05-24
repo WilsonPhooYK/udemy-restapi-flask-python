@@ -26,3 +26,4 @@ server {
 8. `sudo ufw allow https`, `sudo ufw reload`
 9. `sudo systemctl reload nginx`
 10. `sudo systemctl restart nginx`
+11. Set AWS inbound rules for HTTPS to allow anywhere for port 443.
